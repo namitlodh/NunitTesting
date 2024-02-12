@@ -40,5 +40,15 @@ namespace NUnitDemo
 
             Assert.That(result, Is.EqualTo(50));
         }
+        [Test]
+        public void Divide_WhenCalled_ReturnsQuotientOfTwoNumbers()
+        {
+            int a = 10;
+            int b = 2;
+
+            int result = calculator.Divide(a, b);
+
+            Assert.That(result, Is.EqualTo(5));
+        }
     }
 }
