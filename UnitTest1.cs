@@ -30,6 +30,15 @@ namespace NUnitDemo
 
             Assert.That(result, Is.EqualTo(5));
         }
+        [Test]
+        public void Multiply_WhenCalled_ReturnsProductOfTwoNumbers()
+        {
+            int a = 5;
+            int b = 10;
 
+            int result = calculator.Multiply(a, b);
+
+            Assert.That(result, Is.EqualTo(50));
+        }
     }
 }
