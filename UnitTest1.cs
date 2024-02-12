@@ -20,6 +20,16 @@ namespace NUnitDemo
 
             Assert.That(result, Is.EqualTo(15));
         }
+        [Test]
+        public void Subtract_WhenCalled_ReturnsDifferenceOfTwoNumbers()
+        {
+            int a = 10;
+            int b = 5;
+
+            int result = calculator.Subtract(a, b);
+
+            Assert.That(result, Is.EqualTo(5));
+        }
 
     }
 }
